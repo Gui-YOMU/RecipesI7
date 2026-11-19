@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@import '@fullcalendar/react/skeleton.css';
+@import '@fullcalendar/react/themes/forma/theme.css';
+@import '@fullcalendar/react/themes/forma/palettes/red.css';
