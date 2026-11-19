@@ -1,4 +1,4 @@
 import { setupServer } from "msw/node"
-import { handlers } from "./handlers.ts"
+import { successHandlers } from "./successHandlers.ts"
 
-export const server = setupServer(...handlers)
+export const server = setupServer(...successHandlers)
