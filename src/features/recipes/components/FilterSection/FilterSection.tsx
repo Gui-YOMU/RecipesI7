@@ -8,8 +8,8 @@ export const FilterSection = ({
   category,
   changeCategory,
 }: FilterSectionProps) => {
-  const { data: categories, isLoading, isError } = useQuery(recipeQueries.getCategories());
-  if (isLoading) {return <LoadSpinner />}
+  const { data: categories, isPending, isError } = useQuery(recipeQueries.getCategories());
+  if (isPending) {return <LoadSpinner />}
   if (isError) {
     return <p className="text-red-600">Erreur dans le chargement des catégories</p>
   }
